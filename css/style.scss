@@ -2,6 +2,7 @@
 @import "modules/_vars.scss";
 
 
+
 @-webkit-keyframes heartbeat {
     from {
         -webkit-transform: scale(1);
@@ -160,7 +161,8 @@ main {
 
 
 //Заголовок страницы продукта
-.product {
+.product,
+.catalog {
     background: $bg-header;
 
     &__header {
@@ -684,6 +686,11 @@ main {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+//Стили страницы каталога
+@import "block/_catalog";
+//Стили страницы корзины
+@import "block/_cart";
 
 ///Подвал сайта
 @import "block/footer";

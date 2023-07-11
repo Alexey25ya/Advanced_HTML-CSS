@@ -11,10 +11,11 @@
         rel="stylesheet">
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Cart</title>
+    <title>Registration</title>
 </head>
 
 <body>
+
     <header class="header">
 
         <div class="container header__wrap">
@@ -22,6 +23,11 @@
                 <a class="header__logo" href="index.html">
                     <img src="./img/logo.png" width="44" height="38" alt="logo">
                 </a>
+                <form class="search" action="#">
+                    <button class="search__button" type="submit"><img src="./img/search.svg" width="26" height="27"
+                            alt="search"></button>
+                    <input class="search__input" type="text" placeholder="Search">
+                </form>
             </nav>
             <nav class="header__right">
                 <div class="header__item">
@@ -72,66 +78,58 @@
         </div>
 
     </header>
-    <header class="cart">
-        <div class="container cart__header">
-            <h1>SHOPPING CART</h1>
-            </nav>
+
+    <header class="reg">
+        <div class="container reg__header">
+            <h1>registration</h1>
         </div>
     </header>
+
     <main>
-        <div class="container shopping">
-            <section class="shop__cart">
-                <form action="#">
-                    <div class="cart__cards">
-                        <article class="cart__card">
-                            <a href="product.html"><img src="./img/cart_card1.jpg" alt="cart_card1"></a>
-                            <div class="cart__card-text">
-                                <span class="iconify cart__card-icon" data-inline="false" data-icon="bi:x"></span>
-                                <h3>mango people t-&nbsp;shirt</h3>
-                                <span>Price: <span class="intro__text__decor">$300</span></span>
-                                <span>Color: Red</span>
-                                <span>Size: XL</span>
-                                <span class="quantity">Quantity: <input class="quantity__input" type="number"
-                                        placeholder="1"></span>
-                            </div>
-                        </article>
-                        <article class="cart__card">
-                            <a href="product.html"><img src="./img/cart_card2.jpg" alt="cart_card2"></a>
-                            <div class="cart__card-text">
-                                <span class="iconify cart__card-icon" data-inline="false" data-icon="bi:x"></span>
-                                <h3>mango people t-&nbsp;shirt</h3>
-                                <span>Price: <span class="intro__text__decor">$300</span></span>
-                                <span>Color: Red</span>
-                                <span>Size: XL</span>
-                                <span class="quantity">Quantity: <input class="quantity__input" type="number"
-                                        placeholder="1"></span>
-                            </div>
-                        </article>
+        <div class="container registration">
+            <section class="reg__input">
+                <form class="reg__form" action="#">
+                    <h4>Your Name</h4>
+                    <input class="input__name" type="text" placeholder="First Name" autofocus required>
+                    <input class="input__last" type="text" placeholder="Last Name" required>
+                    <div class="check__gender">
+                        <input type="radio" name="gender" id="men" checked> <label class="check__label"
+                            for="men">Male</label>
+                        <input type="radio" name="gender" id="women"> <label class="check__label"
+                            for="women">Female</label>
                     </div>
-                    <div class="shop__cart-button">
-                        <button type="reset">clear shopping cart</button>
-                        <a href="catalog.html">continue shopping</a>
-                    </div>
+                    <h4>Login details</h4>
+                    <input class="input__mail" type="email" placeholder="Email" required>
+                    <input class="input__pass" type="password" placeholder="Password" required minlength="8">
+                    <p class="text__reg">Please use 8 or more characters, with at least 1 number and a mixture of
+                        uppercase and lowercase
+                        letters</p>
+                    <button class="reg__submit" type="submit">join now <span class="iconify icon__submit"
+                            data-inline="false" data-icon="bi:arrow-right" style="font-size: 20px;"></span></button>
                 </form>
             </section>
-            <section class="shop__forms">
-                <form class="ship__form" action="#">
-                    <h4>shipping adress</h4>
-                    <input type="text" placeholder="Bangladesh" required>
-                    <input type="text" placeholder="State" required>
-                    <input type="number" placeholder="Postcode/ZIP" required>
-                    <button type="submit">get a quote</button>
-                </form>
-                <form class="check__form" action="#">
-                    <h6>sub total <span>$900</span></h6>
-                    <h4>grand total <span>$900</span></h4>
-                    <hr>
-                    <button type="submit">proceed to checkout</button>
-                </form>
+
+            <section class="reg__info">
+                <h2>loyalty has its perks</h2>
+                <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these
+                    as
+                    soon as you
+                    join:</p>
+                <p><span class="iconify icon__text" data-inline="false" data-icon="websymbol:ok"></span>15%
+                    off welcome offer</p>
+                <p><span class="iconify icon__text" data-inline="false" data-icon="websymbol:ok"></span>Free
+                    shipping, returns and exchanges on all orders</p>
+                <p><span class="iconify icon__text" data-inline="false" data-icon="websymbol:ok"></span>$10
+                    off a purchase on your birthday</p>
+                <p><span class="iconify icon__text" data-inline="false" data-icon="websymbol:ok"></span>Early
+                    access to products</p>
+                <p><span class="iconify icon__text" data-inline="false" data-icon="websymbol:ok"></span>Exclusive offers
+                    &
+                    rewards</p>
             </section>
         </div>
-
     </main>
+
 
     <footer class="footer">
 
@@ -177,7 +175,6 @@
         </section>
 
     </footer>
-
 
 </body>
 

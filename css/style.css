@@ -1006,6 +1006,23 @@ main {
   font-weight: bold;
 }
 
+.reg {
+  background: url(../img/bg_header.jpg);
+}
+.reg__header {
+  height: 148px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reg h1 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  text-transform: uppercase;
+}
+
 .registration {
   display: flex;
   margin: 64px auto 96px;

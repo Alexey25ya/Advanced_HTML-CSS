@@ -698,9 +698,11 @@ main {
 ///Подвал сайта
 @import "block/footer";
 
-@media (max-width: 1110px) {
+@media (max-width: 1140px) {
     .cards {
         justify-content: center;
+        gap: 16px;
+
     }
 
     .cards.card:nth-child(2n) {
@@ -762,9 +764,7 @@ main {
     .cart__card-text {
         padding: 22px 158px 56px 31px;
     }
-}
 
-@media (max-width: 936px) {
 
     .products__bottom article {
         margin: 30px 0;
@@ -927,9 +927,7 @@ main {
     .products__bottom {
         justify-content: space-between;
     }
-}
 
-@media (max-width: 755px) {
     .card:nth-child(2n) {
         margin-right: 16px;
     }
@@ -966,9 +964,7 @@ main {
     .reg__info {
         margin: 40px 0 0 0;
     }
-}
 
-@media (max-width: 712px) {
     .intro__wrap {
         background: none;
         justify-content: center;
@@ -989,9 +985,7 @@ main {
         margin: 0 auto;
         width: 263px;
     }
-}
 
-@media (max-width: 668px) {
     .intro__wrap-height {
         padding: 363px 0 0 0;
     }
